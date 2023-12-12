@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesproject.css">
+    <title>Fast Wheels Auto</title>
+    <script>
+        function showThankYouMessage() {
+            // Display the "Thank you" message
+            alert('Thank you! We will contact you.');
+        }
+
+        function captureAndDisplay() {
+            // This is where you can capture form values or perform other actions
+            alert('Thank you we will contact you briefly!');
+            
+            document.getElementById('reservationForm').reset();
+        }
+    </script>
+</head>
+
+<body bgcolor="87CEEB">
+    <h1><center>Fast Wheels Auto</center></h1>
+
+    <nav>
+        <center>
+            <a href="HomePage.html">Home</a>
+            <a href="Services.html">Our Services</a>
+            <a href="Tires&Rims.html">Tires and Rims</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="appointment.html">Book Appointment</a>
+        </center>
+    </nav>
+
+    <div id="reservation-form">
+        <h2>Reservation Form</h2>
+        <form id="reservationForm">
+
+            <label for="Service">Service required:</label>
+            <input type="text"><br>
+
+            <label for="time">Time of appointment:</label>
+            <input type="text" id="time" name="time" required><br>
+
+            <label for="contactNumber">Contact number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="make">Make and model of car:</label>
+            <input type="text" id="make" name="make" required><br>
+
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" required><br>
+
+            <button type="button" onclick="captureAndDisplay()">Submit</button>
+
+        </form>
+
+        <div id="reservationResult"></div>
+    </div>
+
+    <footer class="footer">
+        <h2>Contact Info</h2>
+        <p>401 Sesame St, Unit 1, ON, L0Z 5G0</p>
+        <p>905-775-3332</p>
+        <h2>Opening Hours</h2>
+        <p>Mon-Fri: 10:00 AM - 6:00 PM</p>
+        <p>Saturday: 10:00 AM - 3:00 PM</p>
+        <p>Sunday: Closed</p>
+    </footer>
+</body>
+
+</html>
