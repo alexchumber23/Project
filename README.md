@@ -2,6 +2,7 @@
 Project: Fast Wheels Auto
 
 Web Project using HTML, CSS and JS for an Auto shop.
+(I have embedded the JS into HTML as <script>) for css readibility, and clearness.
 
 ## Table of Contents
 
